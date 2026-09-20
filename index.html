@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listening Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1B23;
+    --paper:#F2EFE9;
+    --accent:#B23A2E;
+    --muted:#8A8790;
+    --line:#33323C;
+    --max-width: 640px;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    padding:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:"Space Mono", monospace;
+    line-height:1.6;
+  }
+
+  body{
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  .sleeve{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    position: relative;
+    padding-left: 1.75rem;
+    border-left: 1px solid var(--line);
+  }
+
+  header{
+    margin-bottom: 3.5rem;
+  }
+
+  .kicker{
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0 0 0.5rem;
+  }
+
+  h1{
+    font-family:"Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    line-height: 1.05;
+    margin: 0 0 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .intro{
+    color: var(--paper);
+    font-size: 0.95rem;
+    max-width: 46ch;
+    color: #cfcbd6;
+  }
+
+  .intro a{ color: var(--accent); text-decoration-thickness: 1px; }
+
+  nav{
+    margin-top: 1.75rem;
+    font-size: 0.85rem;
+  }
+
+  nav a{
+    color: var(--paper);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+    margin-right: 1.5rem;
+  }
+
+  nav a.current{
+    color: var(--accent);
+  }
+
+  .entry{
+    padding: 1.4rem 0;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+
+  .entry:first-of-type{
+    padding-top: 0;
+  }
+
+  .entry::before{
+    content: "";
+    position: absolute;
+    left: -1.98rem;
+    top: 1.65rem;
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+
+  .entry .meta{
+    display:flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .entry .track{
+    font-family:"Fraunces", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--paper);
+    margin: 0 0 0.15rem;
+  }
+
+  .entry .artist{
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 0.6rem;
+  }
+
+  .entry .note{
+    font-size: 0.9rem;
+    color: #cfcbd6;
+    max-width: 52ch;
+  }
+
+  footer{
+    margin-top: 4rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: no-preference){
+    .entry{ transition: border-color 0.2s ease; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="sleeve">
+    <header>
+      <p class="kicker">a listening diary</p>
+      <h1>What I've had on repeat</h1>
+      <p class="intro">
+        Notes on what I'm listening to, and why it stuck. Not a review site —
+        just a running record, kept in order, like liner notes for my own year.
+      </p>
+      <nav>
+        <a href="index.html" class="current">Log</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="entry">
+        <div class="meta"><span>Track 001</span><span>20 Sep 2026</span></div>
+        <p class="track">Sample Track Title</p>
+        <p class="artist">Artist Name</p>
+        <p class="note">Replace this with your first entry — what you were doing when you heard it, or why it's stuck with you.</p>
+      </div>
+
+      <div class="entry">
+        <div class="meta"><span>Track 002</span><span>18 Sep 2026</span></div>
+        <p class="track">Another Track</p>
+        <p class="artist">Another Artist</p>
+        <p class="note">This is placeholder content — edit the HTML directly to add your own entries, newest at the top.</p>
+      </div>
+
+    </main>
+
+    <footer>
+      &copy; 2026 &mdash; built by hand.
+    </footer>
+  </div>
+
+</body>
+</html>

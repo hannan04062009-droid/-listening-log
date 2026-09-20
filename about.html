@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About &mdash; Listening Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1B23;
+    --paper:#F2EFE9;
+    --accent:#B23A2E;
+    --muted:#8A8790;
+    --line:#33323C;
+    --max-width: 640px;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background:var(--ink); color:var(--paper);
+    font-family:"Space Mono", monospace;
+    line-height:1.6;
+  }
+  body{ padding: 4rem 1.5rem 6rem; }
+  .sleeve{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: 1.75rem;
+    border-left: 1px solid var(--line);
+  }
+  h1{
+    font-family:"Fraunces", serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    margin: 0 0 1.25rem;
+    letter-spacing: -0.01em;
+  }
+  p{
+    color: #cfcbd6;
+    font-size: 0.95rem;
+    max-width: 50ch;
+    margin: 0 0 1.25rem;
+  }
+  nav{ margin-bottom: 3rem; font-size: 0.85rem; }
+  nav a{
+    color: var(--paper);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+    margin-right: 1.5rem;
+  }
+  nav a.current{ color: var(--accent); }
+  footer{ margin-top: 4rem; font-size: 0.75rem; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="sleeve">
+    <nav>
+      <a href="index.html">Log</a>
+      <a href="about.html" class="current">About</a>
+    </nav>
+    <h1>About this log</h1>
+    <p>Replace this paragraph with a few lines about yourself and why you keep this log — how you find music, what you're drawn to, what this page is for.</p>
+    <p>Add a second paragraph if you want — a favourite genre, an artist you keep coming back to, or how often you plan to update this.</p>
+    <footer>&copy; 2026 &mdash; built by hand.</footer>
+  </div>
+</body>
+</html>
